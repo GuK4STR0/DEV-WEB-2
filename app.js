@@ -1,4 +1,5 @@
 const express = require("express")
+
 const app = express()
 
 app.get("/", function(req, res){
@@ -7,6 +8,7 @@ app.get("/", function(req, res){
 app.get("/produto/:item/:quantidade", function(req, res){
     res.send(req.params.item + ": " + req.params.quantidade)
 })
+
 app.get("/contato", function(req, res){
     res.send("<h1>Pagina de contato</h1>")
 })
