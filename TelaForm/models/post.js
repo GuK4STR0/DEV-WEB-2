@@ -19,6 +19,4 @@ const Agendamentos = db.sequelize.define("agendamentos" , {
 })
 // Agendamentos.sync()
 
-console.log(Agendamentos);
-
 module.exports = Agendamentos
